@@ -16,6 +16,7 @@ from routes.reports import reports_bp
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
+    app.url_map.strict_slashes = False
 
     # Initialize CORS for seamless frontend-backend communication
     CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=True)
@@ -53,5 +54,5 @@ def create_app():
 if __name__ == '__main__':
     app = create_app()
     port = int(os.environ.get('PORT', 5000))
-    print(f"Flask API server running at http://127.0.0.1:{port}")
-    app.run(host='127.0.0.1', port=port, debug=True)
+    print(f"Flask API server running on port {port}")
+    app.run(host='0.0.0.0', port=port, debug=True)

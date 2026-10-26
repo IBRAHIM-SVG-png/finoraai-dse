@@ -1,6 +1,7 @@
 // API Client Service for Harsha Personal Finance System
 
 const BASE_URL = import.meta.env.VITE_API_URL || '/api';
+const DIRECT_API_URL = 'http://127.0.0.1:5000/api';
 
 function getHeaders(isJson = true) {
   const headers = {};
@@ -15,14 +16,35 @@ function getHeaders(isJson = true) {
 }
 
 async function safeFetch(url, options) {
+  let res;
+  let networkError = null;
+
   try {
-    return await fetch(url, options);
+    res = await fetch(url, options);
   } catch (err) {
-    if (err instanceof TypeError && (err.message.includes('fetch') || err.message.includes('Failed') || err.message.includes('Network'))) {
-      throw new Error('Unable to connect to the backend server. Please verify that the Flask backend is running on http://127.0.0.1:5000 (cd backend; python app.py).');
-    }
-    throw err;
+    networkError = err;
   }
+
+  // If primary request failed or returned a 404 HTML (Vite proxy missing/misrouted), try direct connection to Flask
+  const isHtml404 = res && res.status === 404 && (res.headers.get('content-type') || '').includes('text/html');
+
+  if (networkError || isHtml404) {
+    if (url.startsWith('/api')) {
+      try {
+        const directUrl = url.replace(/^\/api/, DIRECT_API_URL);
+        const directRes = await fetch(directUrl, options);
+        return directRes;
+      } catch (directErr) {
+        // Direct attempt also failed
+      }
+    }
+  }
+
+  if (networkError) {
+    throw new Error('Unable to connect to the backend server. Please verify that the Flask backend is running on http://127.0.0.1:5000 (cd backend; python app.py).');
+  }
+
+  return res;
 }
 
 async function handleResponse(response) {
@@ -44,7 +66,10 @@ async function handleResponse(response) {
   }
   
   if (!response.ok) {
-    throw new Error('Server request failed');
+    if (response.status === 404) {
+      throw new Error('API route not found (404). Please ensure the backend server is running and accessible.');
+    }
+    throw new Error(`Server request failed (Status: ${response.status})`);
   }
   return response;
 }
