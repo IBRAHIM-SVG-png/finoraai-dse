@@ -1,0 +1,21 @@
+{
+  "name": "finoraai-dse",
+  "version": "1.0.0",
+  "description": "Intelligent Personal Finance & Future Simulation System",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "lint": "npm run lint --prefix frontend",
+    "preview": "npm run preview --prefix frontend"
+  },
+  "keywords": [
+    "finance",
+    "simulation",
+    "flask",
+    "react",
+    "vite"
+  ],
+  "author": "PRASANNAKUMARPR",
+  "license": "MIT"
+}
