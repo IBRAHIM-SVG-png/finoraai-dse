@@ -1,3 +1,5 @@
+import re
+import sqlite3
 import functools
 from flask import Blueprint, request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -8,6 +10,8 @@ from config import Config
 auth_bp = Blueprint('auth', __name__)
 serializer = URLSafeTimedSerializer(Config.SECRET_KEY)
 TOKEN_MAX_AGE = 60 * 60 * 24 * 7 # 7 days
+ALLOWED_CURRENCIES = {'INR', 'USD', 'EUR', 'GBP'}
+EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')
 
 def generate_token(user_id: int, username: str) -> str:
     return serializer.dumps({"user_id": user_id, "username": username}, salt="auth-token")
@@ -46,12 +50,14 @@ def token_required(f):
 
 @auth_bp.route('/register', methods=['POST'])
 def register():
-    data = request.get_json() or {}
+    data = request.get_json(silent=True) or {}
     username = data.get('username', '').strip().lower()
     email = data.get('email', '').strip().lower()
     password = data.get('password', '').strip()
     full_name = data.get('full_name', '').strip()
     currency = data.get('currency', 'INR').strip().upper()
+    if currency not in ALLOWED_CURRENCIES:
+        currency = 'INR'
 
     if not username or not email or not password or not full_name:
         return jsonify({"error": "All fields (full_name, username, email, password) are required"}), 400
@@ -59,21 +65,34 @@ def register():
     if len(password) < 6:
         return jsonify({"error": "Password must be at least 6 characters long"}), 400
 
-    if '@' not in email or '.' not in email:
+    if not EMAIL_REGEX.match(email):
         return jsonify({"error": "Please enter a valid email address"}), 400
+
+    if len(username) < 3:
+        return jsonify({"error": "Username must be at least 3 characters long"}), 400
 
     password_hash = generate_password_hash(password)
 
     try:
         with get_db() as conn:
             cursor = conn.cursor()
+
+            # Pre-check for duplicate username and email
+            cursor.execute("SELECT id FROM users WHERE username = ?", (username,))
+            if cursor.fetchone():
+                return jsonify({"error": "Username is already taken"}), 409
+
+            cursor.execute("SELECT id FROM users WHERE email = ?", (email,))
+            if cursor.fetchone():
+                return jsonify({"error": "Email is already registered"}), 409
+
             cursor.execute("""
                 INSERT INTO users (username, email, password_hash, full_name, currency, monthly_savings_target)
                 VALUES (?, ?, ?, ?, ?, ?)
             """, (username, email, password_hash, full_name, currency, 5000.0))
             user_id = cursor.lastrowid
             
-            # Create a sample initial budget structure for popular categories
+            # Create sample initial budget structure for popular categories
             sample_budgets = [
                 ("Food", 8000.0),
                 ("Transport", 3000.0),
@@ -105,16 +124,19 @@ def register():
             }
         }), 201
 
-    except Exception as e:
-        if "UNIQUE constraint failed: users.username" in str(e):
+    except sqlite3.IntegrityError as e:
+        err_msg = str(e).lower()
+        if "username" in err_msg:
             return jsonify({"error": "Username is already taken"}), 409
-        elif "UNIQUE constraint failed: users.email" in str(e):
+        elif "email" in err_msg:
             return jsonify({"error": "Email is already registered"}), 409
-        return jsonify({"error": "Failed to create user account"}), 500
+        return jsonify({"error": "Account with these details already exists"}), 409
+    except Exception as e:
+        return jsonify({"error": "Failed to create user account. Please try again."}), 500
 
 @auth_bp.route('/login', methods=['POST'])
 def login():
-    data = request.get_json() or {}
+    data = request.get_json(silent=True) or {}
     identifier = data.get('username_or_email', '').strip().lower()
     password = data.get('password', '').strip()
 

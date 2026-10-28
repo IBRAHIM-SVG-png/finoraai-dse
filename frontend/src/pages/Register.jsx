@@ -100,7 +100,7 @@ export default function Register({ onSwitchToLogin }) {
               type="text"
               required
               className="form-input"
-              placeholder="e.g. Harsha Vardhan"
+              placeholder="e.g. DSCS"
               value={formData.full_name}
               onChange={(e) => setFormData({ ...formData, full_name: e.target.value })}
             />
@@ -113,7 +113,7 @@ export default function Register({ onSwitchToLogin }) {
                 type="text"
                 required
                 className="form-input"
-                placeholder="harsha_v"
+                placeholder="dscs_user"
                 value={formData.username}
                 onChange={(e) => setFormData({ ...formData, username: e.target.value })}
               />
@@ -140,7 +140,7 @@ export default function Register({ onSwitchToLogin }) {
               type="email"
               required
               className="form-input"
-              placeholder="harsha@example.com"
+              placeholder="dscs@example.com"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             />

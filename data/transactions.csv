@@ -1,0 +1,531 @@
+transaction_id,date,description,category,transaction_type,amount,payment_method
+TXN-10001,2026-10-11,Stock Capital Gain,Investment,Income,147.96,Debit Card
+TXN-10002,2026-05-27,Lyft Ride,Transport,Expense,63.69,Credit Card
+TXN-10003,2026-05-24,Dinner Bistro,Food,Expense,34.25,Cash
+TXN-10004,2026-08-16,CVS Pharmacy,Healthcare,Expense,275.23,Debit Card
+TXN-10005,2026-10-26,Dental Checkup Co-pay,Healthcare,Expense,106.75,Bank Transfer
+TXN-10006,2026-05-27,Direct Deposit Payroll,Salary,Income,5042.48,Cash
+TXN-10007,2026-07-07,Tenant Insurance,Housing,Expense,899.86,UPI
+TXN-10008,2026-05-21,O'Reilly Technical Books,Education,Expense,258.42,Credit Card
+TXN-10009,2026-10-17,CVS Pharmacy,Healthcare,Expense,305.15,Credit Card
+TXN-10010,2026-08-06,O'Reilly Technical Books,Education,Expense,154.76,Debit Card
+TXN-10011,2026-10-19,Lyft Ride,Transport,Expense,91.82,Cash
+TXN-10012,2026-07-02,Consulting Retainer,Freelance,Income,1784.29,Cash
+TXN-10013,2026-06-26,Chipotle Lunch,Food,Expense,116.48,Bank Transfer
+TXN-10014,2026-08-11,Water Bill Municipal,Bills,Expense,105.91,UPI
+TXN-10015,2026-08-10,Monthly Apartment Rent,Housing,Expense,1011.9,Debit Card
+TXN-10016,2026-09-21,Steam Video Game Store,Entertainment,Expense,55.78,Debit Card
+TXN-10017,2026-09-08,Trader Joe's Groceries,Food,Expense,28.18,Debit Card
+TXN-10018,2026-10-22,Parking Meter,Transport,Expense,58.37,UPI
+TXN-10019,2026-09-13,Trader Joe's Groceries,Food,Expense,97.99,Cash
+TXN-10020,2026-07-08,Coursera Annual Subscription,Education,Expense,130.99,Debit Card
+TXN-10021,2026-08-25,High-Yield Savings Interest,Investment,Income,155.36,Cash
+TXN-10022,2026-06-15,Metro Card Refill,Transport,Expense,119.1,Cash
+TXN-10023,2026-10-03,Upwork Web Dev Client,Freelance,Income,1109.07,Cash
+TXN-10024,2026-05-01,Monthly Apartment Rent,Housing,Expense,889.49,Bank Transfer
+TXN-10025,2026-07-18,Electric & Gas Utility,Bills,Expense,66.55,UPI
+TXN-10026,2026-05-18,Target Department Store,Shopping,Expense,95.09,Cash
+TXN-10027,2026-06-12,Cinema Ticket IMAX,Entertainment,Expense,130.62,Debit Card
+TXN-10028,2026-07-19,Udemy Python Course,Education,Expense,318.88,UPI
+TXN-10029,2026-05-31,Metro Card Refill,Transport,Expense,10.78,Cash
+TXN-10030,2026-06-28,Trader Joe's Groceries,Food,Expense,101.44,Credit Card
+TXN-10031,2026-06-28,Direct Deposit Payroll,Salary,Income,2712.57,Debit Card
+TXN-10032,2026-07-11,Home Internet Fiber,Bills,Expense,264.24,Cash
+TXN-10033,2026-09-25,Home Maintenance Service,Housing,Expense,952.33,Credit Card
+TXN-10034,2026-10-16,Steam Video Game Store,Entertainment,Expense,69.65,Credit Card
+TXN-10035,2026-10-20,Uber Ride,Transport,Expense,61.15,Bank Transfer
+TXN-10036,2026-05-28,Mobile Phone Plan,Bills,Expense,83.46,Debit Card
+TXN-10037,2026-07-11,Parking Meter,Transport,Expense,114.66,Cash
+TXN-10038,2026-05-26,Dividend Payout Vanguard,Investment,Income,437.6,Debit Card
+TXN-10039,2026-06-12,Monthly Apartment Rent,Housing,Expense,1491.72,Credit Card
+TXN-10040,2026-06-12,Spotify Premium,Entertainment,Expense,130.3,UPI
+TXN-10041,2026-07-13,Monthly Apartment Rent,Housing,Expense,951.92,Debit Card
+TXN-10042,2026-05-15,Whole Foods Market,Food,Expense,15.55,Cash
+TXN-10043,2026-08-31,Amazon.com Retail,Shopping,Expense,134.82,Credit Card
+TXN-10044,2026-06-17,Bi-weekly Salary,Salary,Income,5085.46,UPI
+TXN-10045,2026-05-31,Electric & Gas Utility,Bills,Expense,232.01,UPI
+TXN-10046,2026-10-16,University Exam Fee,Education,Expense,103.32,Bank Transfer
+TXN-10047,2026-07-01,Best Buy Tech,Shopping,Expense,68.35,Credit Card
+TXN-10048,2026-05-03,Uber Ride,Transport,Expense,78.97,Cash
+TXN-10049,2026-07-07,Upwork Web Dev Client,Freelance,Income,1618.91,Bank Transfer
+TXN-10050,2026-07-12,High-Yield Savings Interest,Investment,Income,171.01,Cash
+TXN-10051,2026-05-03,CVS Pharmacy,Healthcare,Expense,331.07,Debit Card
+TXN-10052,2026-07-07,Bi-weekly Salary,Salary,Income,4159.67,Bank Transfer
+TXN-10053,2026-07-12,O'Reilly Technical Books,Education,Expense,253.12,Bank Transfer
+TXN-10054,2026-09-07,Trader Joe's Groceries,Food,Expense,91.73,Bank Transfer
+TXN-10055,2026-05-12,Bi-weekly Salary,Salary,Income,5439.39,Debit Card
+TXN-10056,2026-08-22,Netflix Subscription,Entertainment,Expense,22.77,Debit Card
+TXN-10057,2026-09-17,Design Freelance Project,Freelance,Income,1128.79,UPI
+TXN-10058,2026-06-02,Upwork Web Dev Client,Freelance,Income,1648.39,Debit Card
+TXN-10059,2026-10-22,Metro Card Refill,Transport,Expense,110.98,UPI
+TXN-10060,2026-10-06,Home Internet Fiber,Bills,Expense,342.62,Debit Card
+TXN-10061,2026-08-14,Stock Capital Gain,Investment,Income,362.95,UPI
+TXN-10062,2026-10-19,Water Bill Municipal,Bills,Expense,89.35,Credit Card
+TXN-10063,2026-08-06,Monthly Apartment Rent,Housing,Expense,959.66,UPI
+TXN-10064,2026-07-29,Home Internet Fiber,Bills,Expense,47.34,Debit Card
+TXN-10065,2026-08-11,Metro Card Refill,Transport,Expense,54.35,Cash
+TXN-10066,2026-08-11,Coursera Annual Subscription,Education,Expense,75.76,Bank Transfer
+TXN-10067,2026-06-15,CVS Pharmacy,Healthcare,Expense,73.6,UPI
+TXN-10068,2026-07-28,Udemy Python Course,Education,Expense,227.92,Cash
+TXN-10069,2026-05-30,Water Bill Municipal,Bills,Expense,53.76,UPI
+TXN-10070,2026-05-01,Water Bill Municipal,Bills,Expense,173.7,Bank Transfer
+TXN-10071,2026-10-07,Metro Card Refill,Transport,Expense,74.94,UPI
+TXN-10072,2026-07-23,Dental Checkup Co-pay,Healthcare,Expense,99.47,UPI
+TXN-10073,2026-10-21,Best Buy Tech,Shopping,Expense,61.6,Credit Card
+TXN-10074,2026-07-17,Spotify Premium,Entertainment,Expense,69.38,UPI
+TXN-10075,2026-10-20,Tenant Insurance,Housing,Expense,935.75,Credit Card
+TXN-10076,2026-07-12,Coursera Annual Subscription,Education,Expense,293.71,Debit Card
+TXN-10077,2026-10-20,Home Internet Fiber,Bills,Expense,47.57,Debit Card
+TXN-10078,2026-08-30,Parking Meter,Transport,Expense,62.71,Cash
+TXN-10079,2026-06-19,Steam Video Game Store,Entertainment,Expense,60.75,Debit Card
+TXN-10080,2026-10-15,Parking Meter,Transport,Expense,36.89,Cash
+TXN-10081,2026-08-27,Monthly Corporate Salary,Salary,Income,3869.39,UPI
+TXN-10082,2026-10-18,Udemy Python Course,Education,Expense,229.92,Cash
+TXN-10083,2026-08-18,Monthly Apartment Rent,Housing,Expense,1394.92,UPI
+TXN-10084,2026-08-24,Water Bill Municipal,Bills,Expense,277.4,Cash
+TXN-10085,2026-09-02,Health Insurance Premium,Healthcare,Expense,64.02,Bank Transfer
+TXN-10086,2026-06-30,Coursera Annual Subscription,Education,Expense,82.9,Debit Card
+TXN-10087,2026-08-07,Electric & Gas Utility,Bills,Expense,168.61,Bank Transfer
+TXN-10088,2026-09-16,Chipotle Lunch,Food,Expense,117.94,UPI
+TXN-10089,2026-09-27,Dinner Bistro,Food,Expense,58.21,Credit Card
+TXN-10090,2026-07-30,Steam Video Game Store,Entertainment,Expense,79.05,Cash
+TXN-10091,2026-10-02,Monthly Apartment Rent,Housing,Expense,1018.35,UPI
+TXN-10092,2026-05-08,Cinema Ticket IMAX,Entertainment,Expense,118.95,Debit Card
+TXN-10093,2026-10-07,Netflix Subscription,Entertainment,Expense,19.08,UPI
+TXN-10094,2026-06-04,Amazon.com Retail,Shopping,Expense,42.34,Bank Transfer
+TXN-10095,2026-06-24,Udemy Python Course,Education,Expense,126.26,UPI
+TXN-10096,2026-07-04,Monthly Apartment Rent,Housing,Expense,1399.22,Credit Card
+TXN-10097,2026-07-29,Uber Ride,Transport,Expense,107.56,Debit Card
+TXN-10098,2026-06-21,Target Department Store,Shopping,Expense,24.66,Credit Card
+TXN-10099,2026-09-22,Tenant Insurance,Housing,Expense,1004.99,Bank Transfer
+TXN-10100,2026-06-12,Shell Gas Station,Transport,Expense,135.34,Credit Card
+TXN-10101,2026-09-26,Design Freelance Project,Freelance,Income,1316.02,UPI
+TXN-10102,2026-08-10,Electric & Gas Utility,Bills,Expense,223.55,Debit Card
+TXN-10103,2026-05-27,CVS Pharmacy,Healthcare,Expense,286.83,Cash
+TXN-10104,2026-05-11,Spotify Premium,Entertainment,Expense,17.1,Bank Transfer
+TXN-10105,2026-05-04,Monthly Apartment Rent,Housing,Expense,1146.82,Bank Transfer
+TXN-10106,2026-10-10,Tenant Insurance,Housing,Expense,922.39,Debit Card
+TXN-10107,2026-09-11,Health Insurance Premium,Healthcare,Expense,184.11,Cash
+TXN-10108,2026-07-08,Electric & Gas Utility,Bills,Expense,126.47,UPI
+TXN-10109,2026-07-02,Spotify Premium,Entertainment,Expense,11.79,Bank Transfer
+TXN-10110,2026-06-16,University Exam Fee,Education,Expense,145.51,Cash
+TXN-10111,2026-10-27,Dinner Bistro,Food,Expense,133.14,Credit Card
+TXN-10112,2026-07-01,Tenant Insurance,Housing,Expense,1406.53,UPI
+TXN-10113,2026-10-13,Monthly Apartment Rent,Housing,Expense,874.44,Debit Card
+TXN-10114,2026-08-12,Optometry Eye Exam,Healthcare,Expense,186.71,Cash
+TXN-10115,2026-07-28,University Exam Fee,Education,Expense,257.89,Bank Transfer
+TXN-10116,2026-07-18,Shell Gas Station,Transport,Expense,49.65,Cash
+TXN-10117,2026-10-24,Bi-weekly Salary,Salary,Income,3952.6,Cash
+TXN-10118,2026-09-12,Shell Gas Station,Transport,Expense,47.1,Bank Transfer
+TXN-10119,2026-06-15,Best Buy Tech,Shopping,Expense,14.01,Credit Card
+TXN-10120,2026-09-19,Nike Store,Shopping,Expense,21.54,Credit Card
+TXN-10121,2026-09-24,Home Maintenance Service,Housing,Expense,1072.56,Credit Card
+TXN-10122,2026-07-04,Monthly Apartment Rent,Housing,Expense,1457.69,UPI
+TXN-10123,2026-09-03,High-Yield Savings Interest,Investment,Income,71.44,Debit Card
+TXN-10124,2026-09-22,Shell Gas Station,Transport,Expense,23.64,UPI
+TXN-10125,2026-10-03,Mobile Phone Plan,Bills,Expense,179.66,UPI
+TXN-10126,2026-07-16,Spotify Premium,Entertainment,Expense,83.06,Credit Card
+TXN-10127,2026-10-04,Shell Gas Station,Transport,Expense,90.57,Bank Transfer
+TXN-10128,2026-10-17,Monthly Corporate Salary,Salary,Income,4155.98,Debit Card
+TXN-10129,2026-05-01,Home Maintenance Service,Housing,Expense,826.11,Bank Transfer
+TXN-10130,2026-10-28,Monthly Apartment Rent,Housing,Expense,1349.91,Bank Transfer
+TXN-10131,2026-10-08,Mobile Phone Plan,Bills,Expense,75.58,Debit Card
+TXN-10132,2026-10-13,Upwork Web Dev Client,Freelance,Income,407.11,Debit Card
+TXN-10133,2026-07-18,Health Insurance Premium,Healthcare,Expense,78.55,Bank Transfer
+TXN-10134,2026-10-27,Health Insurance Premium,Healthcare,Expense,175.71,Cash
+TXN-10135,2026-05-11,University Exam Fee,Education,Expense,48.02,Debit Card
+TXN-10136,2026-10-20,Whole Foods Market,Food,Expense,84.06,Debit Card
+TXN-10137,2026-08-29,Home Maintenance Service,Housing,Expense,945.19,Cash
+TXN-10138,2026-08-20,Monthly Apartment Rent,Housing,Expense,1176.01,UPI
+TXN-10139,2026-07-25,Shell Gas Station,Transport,Expense,51.53,UPI
+TXN-10140,2026-07-13,Netflix Subscription,Entertainment,Expense,68.04,Bank Transfer
+TXN-10141,2026-07-04,Netflix Subscription,Entertainment,Expense,94.81,Cash
+TXN-10142,2026-08-27,Water Bill Municipal,Bills,Expense,233.02,UPI
+TXN-10143,2026-10-08,Chipotle Lunch,Food,Expense,43.25,Debit Card
+TXN-10144,2026-07-13,Monthly Apartment Rent,Housing,Expense,823.1,Cash
+TXN-10145,2026-07-01,CVS Pharmacy,Healthcare,Expense,211.2,Credit Card
+TXN-10146,2026-06-27,Parking Meter,Transport,Expense,133.01,Debit Card
+TXN-10147,2026-09-05,Optometry Eye Exam,Healthcare,Expense,168.8,UPI
+TXN-10148,2026-08-29,Nike Store,Shopping,Expense,33.16,Cash
+TXN-10149,2026-09-08,Amazon.com Retail,Shopping,Expense,44.46,UPI
+TXN-10150,2026-07-27,CVS Pharmacy,Healthcare,Expense,127.68,Bank Transfer
+TXN-10151,2026-09-28,Monthly Apartment Rent,Housing,Expense,1157.24,UPI
+TXN-10152,2026-07-28,Steam Video Game Store,Entertainment,Expense,131.14,Debit Card
+TXN-10153,2026-10-26,Cinema Ticket IMAX,Entertainment,Expense,120.99,UPI
+TXN-10154,2026-05-12,Tenant Insurance,Housing,Expense,1530.74,UPI
+TXN-10155,2026-08-07,Nike Store,Shopping,Expense,135.36,Debit Card
+TXN-10156,2026-09-06,Coursera Annual Subscription,Education,Expense,311.0,UPI
+TXN-10157,2026-05-26,Monthly Apartment Rent,Housing,Expense,1377.96,UPI
+TXN-10158,2026-10-15,Parking Meter,Transport,Expense,111.16,Bank Transfer
+TXN-10159,2026-07-26,Netflix Subscription,Entertainment,Expense,120.43,Cash
+TXN-10160,2026-08-06,Tenant Insurance,Housing,Expense,828.72,Credit Card
+TXN-10161,2026-06-30,Dental Checkup Co-pay,Healthcare,Expense,271.5,UPI
+TXN-10162,2026-05-26,Parking Meter,Transport,Expense,29.96,Bank Transfer
+TXN-10163,2026-05-08,Direct Deposit Payroll,Salary,Income,3575.39,UPI
+TXN-10164,2026-06-07,Cinema Ticket IMAX,Entertainment,Expense,30.44,Credit Card
+TXN-10165,2026-10-04,Mobile Phone Plan,Bills,Expense,322.98,Debit Card
+TXN-10166,2026-06-29,Health Insurance Premium,Healthcare,Expense,119.15,Credit Card
+TXN-10167,2026-08-28,Amazon.com Retail,Shopping,Expense,66.31,Bank Transfer
+TXN-10168,2026-09-28,Spotify Premium,Entertainment,Expense,68.3,Bank Transfer
+TXN-10169,2026-06-20,Monthly Apartment Rent,Housing,Expense,989.76,Cash
+TXN-10170,2026-07-31,CVS Pharmacy,Healthcare,Expense,343.16,UPI
+TXN-10171,2026-07-10,High-Yield Savings Interest,Investment,Income,439.44,Cash
+TXN-10172,2026-09-05,Dental Checkup Co-pay,Healthcare,Expense,228.19,Bank Transfer
+TXN-10173,2026-06-26,Dental Checkup Co-pay,Healthcare,Expense,234.76,Credit Card
+TXN-10174,2026-07-19,Dinner Bistro,Food,Expense,56.16,Debit Card
+TXN-10175,2026-05-24,Udemy Python Course,Education,Expense,94.45,Debit Card
+TXN-10176,2026-09-16,University Exam Fee,Education,Expense,297.45,Bank Transfer
+TXN-10177,2026-09-01,Optometry Eye Exam,Healthcare,Expense,289.31,UPI
+TXN-10178,2026-05-20,Bi-weekly Salary,Salary,Income,4672.65,UPI
+TXN-10179,2026-09-20,Netflix Subscription,Entertainment,Expense,42.91,Credit Card
+TXN-10180,2026-08-25,Health Insurance Premium,Healthcare,Expense,294.95,Bank Transfer
+TXN-10181,2026-05-28,Monthly Apartment Rent,Housing,Expense,1295.64,Cash
+TXN-10182,2026-07-23,Electric & Gas Utility,Bills,Expense,236.98,UPI
+TXN-10183,2026-10-27,Netflix Subscription,Entertainment,Expense,26.45,Credit Card
+TXN-10184,2026-07-17,Uber Ride,Transport,Expense,38.99,Cash
+TXN-10185,2026-06-04,Udemy Python Course,Education,Expense,222.08,Debit Card
+TXN-10186,2026-08-15,Tenant Insurance,Housing,Expense,1126.49,Bank Transfer
+TXN-10187,2026-05-09,Mobile Phone Plan,Bills,Expense,177.86,Debit Card
+TXN-10188,2026-08-01,Stock Capital Gain,Investment,Income,267.79,Bank Transfer
+TXN-10189,2026-05-16,Electric & Gas Utility,Bills,Expense,334.19,UPI
+TXN-10190,2026-05-24,Trader Joe's Groceries,Food,Expense,111.86,Debit Card
+TXN-10191,2026-06-02,Electric & Gas Utility,Bills,Expense,297.24,Cash
+TXN-10192,2026-06-23,Water Bill Municipal,Bills,Expense,280.05,Cash
+TXN-10193,2026-05-01,Target Department Store,Shopping,Expense,79.31,Debit Card
+TXN-10194,2026-05-29,Chipotle Lunch,Food,Expense,9.96,Debit Card
+TXN-10195,2026-09-28,Best Buy Tech,Shopping,Expense,14.92,UPI
+TXN-10196,2026-09-12,Direct Deposit Payroll,Salary,Income,3844.83,Bank Transfer
+TXN-10197,2026-09-09,Tenant Insurance,Housing,Expense,977.24,Cash
+TXN-10198,2026-05-12,Health Insurance Premium,Healthcare,Expense,239.44,Credit Card
+TXN-10199,2026-05-16,Steam Video Game Store,Entertainment,Expense,98.56,UPI
+TXN-10200,2026-08-22,Direct Deposit Payroll,Salary,Income,4324.89,Credit Card
+TXN-10201,2026-06-02,Udemy Python Course,Education,Expense,348.33,Cash
+TXN-10202,2026-07-15,Netflix Subscription,Entertainment,Expense,112.69,Credit Card
+TXN-10203,2026-10-15,Mobile Phone Plan,Bills,Expense,179.98,Debit Card
+TXN-10204,2026-08-14,Home Maintenance Service,Housing,Expense,1132.79,Credit Card
+TXN-10205,2026-07-20,Optometry Eye Exam,Healthcare,Expense,335.61,UPI
+TXN-10206,2026-05-18,Monthly Corporate Salary,Salary,Income,3795.63,Bank Transfer
+TXN-10207,2026-06-03,Coursera Annual Subscription,Education,Expense,167.35,UPI
+TXN-10208,2026-05-14,Optometry Eye Exam,Healthcare,Expense,72.12,Cash
+TXN-10209,2026-06-24,Upwork Web Dev Client,Freelance,Income,1570.91,Bank Transfer
+TXN-10210,2026-09-20,Dental Checkup Co-pay,Healthcare,Expense,290.24,Cash
+TXN-10211,2026-10-07,Dinner Bistro,Food,Expense,130.64,Bank Transfer
+TXN-10212,2026-05-08,Stock Capital Gain,Investment,Income,418.62,Bank Transfer
+TXN-10213,2026-05-02,Bi-weekly Salary,Salary,Income,4472.03,Credit Card
+TXN-10214,2026-06-06,Trader Joe's Groceries,Food,Expense,106.49,Debit Card
+TXN-10215,2026-08-05,O'Reilly Technical Books,Education,Expense,154.72,Bank Transfer
+TXN-10216,2026-09-23,Chipotle Lunch,Food,Expense,28.78,Cash
+TXN-10217,2026-05-13,Health Insurance Premium,Healthcare,Expense,245.2,UPI
+TXN-10218,2026-10-03,Dental Checkup Co-pay,Healthcare,Expense,274.03,Credit Card
+TXN-10219,2026-07-28,Health Insurance Premium,Healthcare,Expense,203.35,Bank Transfer
+TXN-10220,2026-05-12,Trader Joe's Groceries,Food,Expense,34.98,Debit Card
+TXN-10221,2026-06-05,Optometry Eye Exam,Healthcare,Expense,77.2,UPI
+TXN-10222,2026-08-19,Design Freelance Project,Freelance,Income,1355.51,Cash
+TXN-10223,2026-09-21,Coursera Annual Subscription,Education,Expense,163.09,Credit Card
+TXN-10224,2026-08-20,Direct Deposit Payroll,Salary,Income,4227.28,Cash
+TXN-10225,2026-08-12,Spotify Premium,Entertainment,Expense,23.2,Credit Card
+TXN-10226,2026-07-23,Stock Capital Gain,Investment,Income,382.81,Bank Transfer
+TXN-10227,2026-05-23,Shell Gas Station,Transport,Expense,65.51,UPI
+TXN-10228,2026-09-12,Design Freelance Project,Freelance,Income,809.27,Bank Transfer
+TXN-10229,2026-06-13,Dividend Payout Vanguard,Investment,Income,262.24,Debit Card
+TXN-10230,2026-07-29,Target Department Store,Shopping,Expense,21.57,Bank Transfer
+TXN-10231,2026-06-20,Bi-weekly Salary,Salary,Income,2726.06,UPI
+TXN-10232,2026-08-27,Tenant Insurance,Housing,Expense,1539.32,Cash
+TXN-10233,2026-10-12,University Exam Fee,Education,Expense,86.8,Credit Card
+TXN-10234,2026-08-29,Optometry Eye Exam,Healthcare,Expense,223.34,Bank Transfer
+TXN-10235,2026-09-07,Consulting Retainer,Freelance,Income,356.41,Bank Transfer
+TXN-10236,2026-07-13,Bi-weekly Salary,Salary,Income,4282.24,UPI
+TXN-10237,2026-08-27,Starbucks Coffee,Food,Expense,127.99,Cash
+TXN-10238,2026-10-14,Stock Capital Gain,Investment,Income,250.55,Credit Card
+TXN-10239,2026-08-24,Design Freelance Project,Freelance,Income,426.49,Debit Card
+TXN-10240,2026-05-11,Home Maintenance Service,Housing,Expense,1219.25,Cash
+TXN-10241,2026-06-10,Health Insurance Premium,Healthcare,Expense,166.72,Bank Transfer
+TXN-10242,2026-10-21,Coursera Annual Subscription,Education,Expense,142.2,Cash
+TXN-10243,2026-10-21,Dental Checkup Co-pay,Healthcare,Expense,143.34,Cash
+TXN-10244,2026-10-17,Consulting Retainer,Freelance,Income,1751.54,UPI
+TXN-10245,2026-06-03,Metro Card Refill,Transport,Expense,81.78,Bank Transfer
+TXN-10246,2026-06-02,Parking Meter,Transport,Expense,75.12,Credit Card
+TXN-10247,2026-08-01,Water Bill Municipal,Bills,Expense,333.78,UPI
+TXN-10248,2026-06-19,Target Department Store,Shopping,Expense,18.19,Credit Card
+TXN-10249,2026-09-07,Whole Foods Market,Food,Expense,123.68,Cash
+TXN-10250,2026-06-03,Target Department Store,Shopping,Expense,31.87,Cash
+TXN-10251,2026-06-12,Starbucks Coffee,Food,Expense,56.09,Debit Card
+TXN-10252,2026-08-22,Monthly Apartment Rent,Housing,Expense,1227.21,Bank Transfer
+TXN-10253,2026-08-29,Water Bill Municipal,Bills,Expense,250.28,Cash
+TXN-10254,2026-08-21,Health Insurance Premium,Healthcare,Expense,195.9,UPI
+TXN-10255,2026-06-11,Best Buy Tech,Shopping,Expense,14.89,UPI
+TXN-10256,2026-08-04,Lyft Ride,Transport,Expense,120.35,Bank Transfer
+TXN-10257,2026-05-22,Health Insurance Premium,Healthcare,Expense,320.64,Debit Card
+TXN-10258,2026-08-20,Direct Deposit Payroll,Salary,Income,5153.89,Credit Card
+TXN-10259,2026-08-15,Stock Capital Gain,Investment,Income,144.31,Credit Card
+TXN-10260,2026-08-04,Coursera Annual Subscription,Education,Expense,300.14,Bank Transfer
+TXN-10261,2026-06-07,Consulting Retainer,Freelance,Income,1344.11,Debit Card
+TXN-10262,2026-10-28,Trader Joe's Groceries,Food,Expense,10.51,Debit Card
+TXN-10263,2026-06-08,Netflix Subscription,Entertainment,Expense,110.45,Debit Card
+TXN-10264,2026-07-17,Direct Deposit Payroll,Salary,Income,4416.86,Cash
+TXN-10265,2026-08-26,Design Freelance Project,Freelance,Income,1104.08,Cash
+TXN-10266,2026-09-25,Best Buy Tech,Shopping,Expense,64.66,Cash
+TXN-10267,2026-07-30,Cinema Ticket IMAX,Entertainment,Expense,95.7,Credit Card
+TXN-10268,2026-09-12,Lyft Ride,Transport,Expense,79.82,Cash
+TXN-10269,2026-09-19,Upwork Web Dev Client,Freelance,Income,1253.51,Bank Transfer
+TXN-10270,2026-07-04,Coursera Annual Subscription,Education,Expense,146.89,Credit Card
+TXN-10271,2026-09-26,O'Reilly Technical Books,Education,Expense,53.74,Cash
+TXN-10272,2026-07-26,Nike Store,Shopping,Expense,137.47,UPI
+TXN-10273,2026-10-09,Monthly Corporate Salary,Salary,Income,4648.14,UPI
+TXN-10274,2026-05-10,Chipotle Lunch,Food,Expense,124.92,Bank Transfer
+TXN-10275,2026-07-19,Home Maintenance Service,Housing,Expense,829.3,Debit Card
+TXN-10276,2026-07-13,Whole Foods Market,Food,Expense,44.06,Bank Transfer
+TXN-10277,2026-08-20,Home Maintenance Service,Housing,Expense,1071.23,Debit Card
+TXN-10278,2026-09-05,University Exam Fee,Education,Expense,288.36,UPI
+TXN-10279,2026-05-21,Best Buy Tech,Shopping,Expense,50.4,Credit Card
+TXN-10280,2026-07-23,Health Insurance Premium,Healthcare,Expense,226.81,UPI
+TXN-10281,2026-06-12,Udemy Python Course,Education,Expense,53.13,Bank Transfer
+TXN-10282,2026-10-05,CVS Pharmacy,Healthcare,Expense,63.26,UPI
+TXN-10283,2026-08-02,Amazon.com Retail,Shopping,Expense,26.85,Cash
+TXN-10284,2026-10-21,Chipotle Lunch,Food,Expense,16.87,Bank Transfer
+TXN-10285,2026-08-01,Dinner Bistro,Food,Expense,28.25,UPI
+TXN-10286,2026-08-03,Lyft Ride,Transport,Expense,26.18,Bank Transfer
+TXN-10287,2026-08-10,Dental Checkup Co-pay,Healthcare,Expense,337.76,Credit Card
+TXN-10288,2026-06-17,Netflix Subscription,Entertainment,Expense,42.55,Bank Transfer
+TXN-10289,2026-10-28,Health Insurance Premium,Healthcare,Expense,102.06,Debit Card
+TXN-10290,2026-05-19,Monthly Apartment Rent,Housing,Expense,1448.41,Bank Transfer
+TXN-10291,2026-10-18,Lyft Ride,Transport,Expense,79.57,Bank Transfer
+TXN-10292,2026-06-10,Best Buy Tech,Shopping,Expense,75.16,Credit Card
+TXN-10293,2026-06-21,Mobile Phone Plan,Bills,Expense,48.15,Cash
+TXN-10294,2026-09-24,Amazon.com Retail,Shopping,Expense,16.68,UPI
+TXN-10295,2026-08-31,Netflix Subscription,Entertainment,Expense,24.54,Bank Transfer
+TXN-10296,2026-10-12,Design Freelance Project,Freelance,Income,1076.04,Debit Card
+TXN-10297,2026-09-19,Target Department Store,Shopping,Expense,65.11,Credit Card
+TXN-10298,2026-06-01,Dental Checkup Co-pay,Healthcare,Expense,90.21,Debit Card
+TXN-10299,2026-07-28,CVS Pharmacy,Healthcare,Expense,117.69,Cash
+TXN-10300,2026-07-10,Design Freelance Project,Freelance,Income,1100.22,Cash
+TXN-10301,2026-10-12,Dividend Payout Vanguard,Investment,Income,118.48,Cash
+TXN-10302,2026-10-02,Trader Joe's Groceries,Food,Expense,18.72,Cash
+TXN-10303,2026-07-07,Netflix Subscription,Entertainment,Expense,73.74,Cash
+TXN-10304,2026-07-14,Health Insurance Premium,Healthcare,Expense,115.91,UPI
+TXN-10305,2026-07-16,Chipotle Lunch,Food,Expense,66.03,UPI
+TXN-10306,2026-08-27,Best Buy Tech,Shopping,Expense,121.72,Bank Transfer
+TXN-10307,2026-07-28,Best Buy Tech,Shopping,Expense,75.98,Credit Card
+TXN-10308,2026-07-21,Metro Card Refill,Transport,Expense,67.35,Debit Card
+TXN-10309,2026-05-25,Design Freelance Project,Freelance,Income,927.2,Debit Card
+TXN-10310,2026-07-23,O'Reilly Technical Books,Education,Expense,276.57,UPI
+TXN-10311,2026-09-09,Health Insurance Premium,Healthcare,Expense,47.18,UPI
+TXN-10312,2026-09-07,Home Internet Fiber,Bills,Expense,220.84,Credit Card
+TXN-10313,2026-05-13,Home Maintenance Service,Housing,Expense,1229.35,Credit Card
+TXN-10314,2026-08-19,Design Freelance Project,Freelance,Income,848.67,UPI
+TXN-10315,2026-08-02,Bi-weekly Salary,Salary,Income,4185.45,Bank Transfer
+TXN-10316,2026-09-19,Steam Video Game Store,Entertainment,Expense,108.9,Bank Transfer
+TXN-10317,2026-10-07,Shell Gas Station,Transport,Expense,136.71,UPI
+TXN-10318,2026-08-04,University Exam Fee,Education,Expense,274.04,Debit Card
+TXN-10319,2026-10-02,Trader Joe's Groceries,Food,Expense,13.14,Bank Transfer
+TXN-10320,2026-08-30,Target Department Store,Shopping,Expense,51.29,Cash
+TXN-10321,2026-07-21,High-Yield Savings Interest,Investment,Income,387.04,Cash
+TXN-10322,2026-07-26,Tenant Insurance,Housing,Expense,1250.34,UPI
+TXN-10323,2026-05-05,Parking Meter,Transport,Expense,85.05,Credit Card
+TXN-10324,2026-09-30,Electric & Gas Utility,Bills,Expense,220.89,Debit Card
+TXN-10325,2026-09-12,Cinema Ticket IMAX,Entertainment,Expense,116.46,Debit Card
+TXN-10326,2026-05-09,Shell Gas Station,Transport,Expense,10.5,Bank Transfer
+TXN-10327,2026-08-16,Dividend Payout Vanguard,Investment,Income,214.15,Cash
+TXN-10328,2026-08-29,Chipotle Lunch,Food,Expense,76.47,Cash
+TXN-10329,2026-07-23,Tenant Insurance,Housing,Expense,1101.46,Debit Card
+TXN-10330,2026-08-26,University Exam Fee,Education,Expense,249.52,Bank Transfer
+TXN-10331,2026-10-04,Water Bill Municipal,Bills,Expense,213.01,Debit Card
+TXN-10332,2026-07-16,Mobile Phone Plan,Bills,Expense,138.28,Bank Transfer
+TXN-10333,2026-09-21,Optometry Eye Exam,Healthcare,Expense,77.78,Cash
+TXN-10334,2026-08-06,Spotify Premium,Entertainment,Expense,134.01,Debit Card
+TXN-10335,2026-07-14,Dividend Payout Vanguard,Investment,Income,188.55,UPI
+TXN-10336,2026-10-15,Monthly Apartment Rent,Housing,Expense,961.65,Cash
+TXN-10337,2026-07-09,Dental Checkup Co-pay,Healthcare,Expense,73.86,Cash
+TXN-10338,2026-07-01,Home Internet Fiber,Bills,Expense,56.27,UPI
+TXN-10339,2026-07-24,Shell Gas Station,Transport,Expense,8.68,Cash
+TXN-10340,2026-06-10,Home Maintenance Service,Housing,Expense,1320.43,Bank Transfer
+TXN-10341,2026-07-22,Trader Joe's Groceries,Food,Expense,94.1,Debit Card
+TXN-10342,2026-09-14,Chipotle Lunch,Food,Expense,63.16,Debit Card
+TXN-10343,2026-05-10,Steam Video Game Store,Entertainment,Expense,32.59,Bank Transfer
+TXN-10344,2026-05-10,High-Yield Savings Interest,Investment,Income,92.92,Bank Transfer
+TXN-10345,2026-07-12,Monthly Apartment Rent,Housing,Expense,1480.85,UPI
+TXN-10346,2026-07-09,Direct Deposit Payroll,Salary,Income,2987.48,UPI
+TXN-10347,2026-10-13,Amazon.com Retail,Shopping,Expense,105.23,Bank Transfer
+TXN-10348,2026-09-23,Home Internet Fiber,Bills,Expense,229.4,UPI
+TXN-10349,2026-08-18,Parking Meter,Transport,Expense,96.34,Debit Card
+TXN-10350,2026-06-05,Electric & Gas Utility,Bills,Expense,120.84,Debit Card
+TXN-10351,2026-08-23,University Exam Fee,Education,Expense,220.56,Cash
+TXN-10352,2026-05-03,O'Reilly Technical Books,Education,Expense,59.26,Credit Card
+TXN-10353,2026-08-28,Spotify Premium,Entertainment,Expense,99.12,Bank Transfer
+TXN-10354,2026-08-03,Home Internet Fiber,Bills,Expense,188.24,UPI
+TXN-10355,2026-10-03,Tenant Insurance,Housing,Expense,1441.6,Debit Card
+TXN-10356,2026-07-03,Lyft Ride,Transport,Expense,66.97,Bank Transfer
+TXN-10357,2026-05-20,Uber Ride,Transport,Expense,117.4,Cash
+TXN-10358,2026-06-21,Target Department Store,Shopping,Expense,51.31,Cash
+TXN-10359,2026-08-22,Bi-weekly Salary,Salary,Income,4249.44,Credit Card
+TXN-10360,2026-09-08,Starbucks Coffee,Food,Expense,25.42,UPI
+TXN-10361,2026-08-25,Tenant Insurance,Housing,Expense,1445.53,Credit Card
+TXN-10362,2026-08-10,Chipotle Lunch,Food,Expense,84.34,Credit Card
+TXN-10363,2026-08-17,Lyft Ride,Transport,Expense,139.22,Credit Card
+TXN-10364,2026-08-29,Upwork Web Dev Client,Freelance,Income,1453.46,UPI
+TXN-10365,2026-08-04,Steam Video Game Store,Entertainment,Expense,122.79,UPI
+TXN-10366,2026-08-05,High-Yield Savings Interest,Investment,Income,103.2,Bank Transfer
+TXN-10367,2026-05-31,Stock Capital Gain,Investment,Income,261.54,Debit Card
+TXN-10368,2026-05-01,Health Insurance Premium,Healthcare,Expense,248.78,Cash
+TXN-10369,2026-08-17,Home Internet Fiber,Bills,Expense,182.79,Debit Card
+TXN-10370,2026-07-10,Dividend Payout Vanguard,Investment,Income,62.89,UPI
+TXN-10371,2026-10-05,Chipotle Lunch,Food,Expense,35.2,Credit Card
+TXN-10372,2026-09-30,High-Yield Savings Interest,Investment,Income,331.31,Credit Card
+TXN-10373,2026-07-02,Steam Video Game Store,Entertainment,Expense,38.93,Debit Card
+TXN-10374,2026-05-15,Upwork Web Dev Client,Freelance,Income,1523.68,Cash
+TXN-10375,2026-07-21,O'Reilly Technical Books,Education,Expense,133.55,Debit Card
+TXN-10376,2026-10-17,Spotify Premium,Entertainment,Expense,44.32,Cash
+TXN-10377,2026-09-29,Nike Store,Shopping,Expense,81.37,Credit Card
+TXN-10378,2026-07-28,Spotify Premium,Entertainment,Expense,99.91,UPI
+TXN-10379,2026-06-08,Nike Store,Shopping,Expense,39.81,Debit Card
+TXN-10380,2026-07-16,Nike Store,Shopping,Expense,128.75,Cash
+TXN-10381,2026-08-14,Nike Store,Shopping,Expense,40.06,Debit Card
+TXN-10382,2026-07-24,Home Maintenance Service,Housing,Expense,873.97,Debit Card
+TXN-10383,2026-05-14,Trader Joe's Groceries,Food,Expense,32.84,Cash
+TXN-10384,2026-10-19,Monthly Apartment Rent,Housing,Expense,1495.58,Bank Transfer
+TXN-10385,2026-07-17,Chipotle Lunch,Food,Expense,131.71,Credit Card
+TXN-10386,2026-08-31,Mobile Phone Plan,Bills,Expense,323.69,Cash
+TXN-10387,2026-07-22,Steam Video Game Store,Entertainment,Expense,78.44,Bank Transfer
+TXN-10388,2026-07-18,Home Maintenance Service,Housing,Expense,878.89,UPI
+TXN-10389,2026-07-21,University Exam Fee,Education,Expense,168.32,Cash
+TXN-10390,2026-06-26,Whole Foods Market,Food,Expense,81.04,Cash
+TXN-10391,2026-09-26,Dental Checkup Co-pay,Healthcare,Expense,100.82,Debit Card
+TXN-10392,2026-08-06,Mobile Phone Plan,Bills,Expense,210.7,Bank Transfer
+TXN-10393,2026-07-05,Tenant Insurance,Housing,Expense,1313.36,UPI
+TXN-10394,2026-08-26,Upwork Web Dev Client,Freelance,Income,509.94,Cash
+TXN-10395,2026-09-03,High-Yield Savings Interest,Investment,Income,432.89,Cash
+TXN-10396,2026-05-09,Uber Ride,Transport,Expense,108.89,UPI
+TXN-10397,2026-06-05,Electric & Gas Utility,Bills,Expense,259.22,Credit Card
+TXN-10398,2026-06-25,Coursera Annual Subscription,Education,Expense,231.53,Cash
+TXN-10399,2026-09-01,Trader Joe's Groceries,Food,Expense,78.25,UPI
+TXN-10400,2026-05-04,Stock Capital Gain,Investment,Income,264.3,Bank Transfer
+TXN-10401,2026-05-05,Cinema Ticket IMAX,Entertainment,Expense,22.13,Credit Card
+TXN-10402,2026-09-12,Bi-weekly Salary,Salary,Income,4079.37,Bank Transfer
+TXN-10403,2026-07-08,Metro Card Refill,Transport,Expense,134.63,UPI
+TXN-10404,2026-09-22,Water Bill Municipal,Bills,Expense,252.05,Credit Card
+TXN-10405,2026-10-15,Trader Joe's Groceries,Food,Expense,61.5,UPI
+TXN-10406,2026-09-19,Chipotle Lunch,Food,Expense,18.91,UPI
+TXN-10407,2026-10-13,Lyft Ride,Transport,Expense,129.33,Debit Card
+TXN-10408,2026-06-24,Home Maintenance Service,Housing,Expense,837.25,Credit Card
+TXN-10409,2026-10-23,Chipotle Lunch,Food,Expense,130.6,Bank Transfer
+TXN-10410,2026-05-05,Nike Store,Shopping,Expense,130.61,Bank Transfer
+TXN-10411,2026-06-11,Spotify Premium,Entertainment,Expense,58.67,Debit Card
+TXN-10412,2026-10-24,Coursera Annual Subscription,Education,Expense,70.28,Debit Card
+TXN-10413,2026-05-20,Spotify Premium,Entertainment,Expense,11.91,Bank Transfer
+TXN-10414,2026-08-24,Udemy Python Course,Education,Expense,173.87,Cash
+TXN-10415,2026-10-17,Dental Checkup Co-pay,Healthcare,Expense,261.06,Credit Card
+TXN-10416,2026-07-08,High-Yield Savings Interest,Investment,Income,111.71,UPI
+TXN-10417,2026-07-21,Uber Ride,Transport,Expense,132.47,UPI
+TXN-10418,2026-08-01,Shell Gas Station,Transport,Expense,19.52,UPI
+TXN-10419,2026-08-23,Netflix Subscription,Entertainment,Expense,11.47,Bank Transfer
+TXN-10420,2026-09-19,Stock Capital Gain,Investment,Income,395.49,Credit Card
+TXN-10421,2026-07-14,Lyft Ride,Transport,Expense,127.49,Debit Card
+TXN-10422,2026-09-24,Cinema Ticket IMAX,Entertainment,Expense,26.33,Bank Transfer
+TXN-10423,2026-07-08,Shell Gas Station,Transport,Expense,65.38,UPI
+TXN-10424,2026-07-16,Metro Card Refill,Transport,Expense,41.22,Debit Card
+TXN-10425,2026-10-08,Mobile Phone Plan,Bills,Expense,73.16,Bank Transfer
+TXN-10426,2026-05-02,Udemy Python Course,Education,Expense,289.26,Bank Transfer
+TXN-10427,2026-08-21,Best Buy Tech,Shopping,Expense,50.33,Debit Card
+TXN-10428,2026-08-31,Spotify Premium,Entertainment,Expense,46.47,UPI
+TXN-10429,2026-09-25,Udemy Python Course,Education,Expense,126.89,UPI
+TXN-10430,2026-08-02,Dividend Payout Vanguard,Investment,Income,286.89,Cash
+TXN-10431,2026-06-16,Starbucks Coffee,Food,Expense,132.47,Debit Card
+TXN-10432,2026-08-21,Parking Meter,Transport,Expense,96.83,Debit Card
+TXN-10433,2026-10-10,Dental Checkup Co-pay,Healthcare,Expense,261.72,UPI
+TXN-10434,2026-05-19,Tenant Insurance,Housing,Expense,1120.64,Cash
+TXN-10435,2026-10-25,Whole Foods Market,Food,Expense,100.62,Cash
+TXN-10436,2026-09-30,Uber Ride,Transport,Expense,109.5,Bank Transfer
+TXN-10437,2026-06-12,Dinner Bistro,Food,Expense,137.84,UPI
+TXN-10438,2026-07-24,Netflix Subscription,Entertainment,Expense,9.39,Bank Transfer
+TXN-10439,2026-06-26,Mobile Phone Plan,Bills,Expense,155.98,UPI
+TXN-10440,2026-10-21,Best Buy Tech,Shopping,Expense,139.7,UPI
+TXN-10441,2026-05-27,Uber Ride,Transport,Expense,117.73,Debit Card
+TXN-10442,2026-07-29,Monthly Apartment Rent,Housing,Expense,1216.89,Bank Transfer
+TXN-10443,2026-08-30,High-Yield Savings Interest,Investment,Income,230.98,Credit Card
+TXN-10444,2026-07-16,Dividend Payout Vanguard,Investment,Income,59.03,Bank Transfer
+TXN-10445,2026-10-13,Bi-weekly Salary,Salary,Income,3231.74,Debit Card
+TXN-10446,2026-09-19,Stock Capital Gain,Investment,Income,433.39,Debit Card
+TXN-10447,2026-08-12,Nike Store,Shopping,Expense,60.22,Cash
+TXN-10448,2026-06-20,Steam Video Game Store,Entertainment,Expense,8.59,Debit Card
+TXN-10449,2026-06-22,Lyft Ride,Transport,Expense,21.43,Cash
+TXN-10450,2026-06-17,Mobile Phone Plan,Bills,Expense,75.33,UPI
+TXN-10451,2026-09-13,Udemy Python Course,Education,Expense,229.51,Cash
+TXN-10452,2026-05-30,Tenant Insurance,Housing,Expense,938.02,Bank Transfer
+TXN-10453,2026-10-05,Best Buy Tech,Shopping,Expense,23.56,Bank Transfer
+TXN-10454,2026-05-30,Dividend Payout Vanguard,Investment,Income,254.33,UPI
+TXN-10455,2026-09-30,Consulting Retainer,Freelance,Income,578.63,Cash
+TXN-10456,2026-10-25,Target Department Store,Shopping,Expense,72.63,Debit Card
+TXN-10457,2026-06-17,Tenant Insurance,Housing,Expense,842.89,Bank Transfer
+TXN-10458,2026-05-03,Mobile Phone Plan,Bills,Expense,338.79,Cash
+TXN-10459,2026-10-15,Home Maintenance Service,Housing,Expense,1368.11,UPI
+TXN-10460,2026-09-03,Dividend Payout Vanguard,Investment,Income,368.35,Debit Card
+TXN-10461,2026-07-14,Bi-weekly Salary,Salary,Income,3366.01,UPI
+TXN-10462,2026-09-22,Tenant Insurance,Housing,Expense,1208.64,Cash
+TXN-10463,2026-05-30,Coursera Annual Subscription,Education,Expense,275.6,UPI
+TXN-10464,2026-09-17,Netflix Subscription,Entertainment,Expense,105.15,Debit Card
+TXN-10465,2026-07-16,Starbucks Coffee,Food,Expense,42.69,Credit Card
+TXN-10466,2026-08-21,Shell Gas Station,Transport,Expense,35.7,Cash
+TXN-10467,2026-10-24,Cinema Ticket IMAX,Entertainment,Expense,89.33,Debit Card
+TXN-10468,2026-06-22,University Exam Fee,Education,Expense,225.03,Debit Card
+TXN-10469,2026-07-22,Optometry Eye Exam,Healthcare,Expense,217.55,Cash
+TXN-10470,2026-10-21,Nike Store,Shopping,Expense,129.28,Bank Transfer
+TXN-10471,2026-10-15,Monthly Corporate Salary,Salary,Income,2938.73,Bank Transfer
+TXN-10472,2026-07-03,Steam Video Game Store,Entertainment,Expense,26.77,Bank Transfer
+TXN-10473,2026-10-08,Monthly Apartment Rent,Housing,Expense,1306.9,Credit Card
+TXN-10474,2026-08-12,Optometry Eye Exam,Healthcare,Expense,180.96,UPI
+TXN-10475,2026-07-23,Parking Meter,Transport,Expense,91.8,Bank Transfer
+TXN-10476,2026-05-17,Cinema Ticket IMAX,Entertainment,Expense,135.79,Debit Card
+TXN-10477,2026-09-04,Optometry Eye Exam,Healthcare,Expense,209.67,Debit Card
+TXN-10478,2026-09-22,Coursera Annual Subscription,Education,Expense,54.24,UPI
+TXN-10479,2026-05-05,Direct Deposit Payroll,Salary,Income,3869.55,UPI
+TXN-10480,2026-06-21,Best Buy Tech,Shopping,Expense,28.99,Bank Transfer
+TXN-10481,2026-05-24,CVS Pharmacy,Healthcare,Expense,155.27,Debit Card
+TXN-10482,2026-05-14,Dental Checkup Co-pay,Healthcare,Expense,173.06,Credit Card
+TXN-10483,2026-10-28,Direct Deposit Payroll,Salary,Income,2733.82,Cash
+TXN-10484,2026-06-27,Monthly Apartment Rent,Housing,Expense,806.45,Bank Transfer
+TXN-10485,2026-05-31,Cinema Ticket IMAX,Entertainment,Expense,71.06,Debit Card
+TXN-10486,2026-08-07,Monthly Corporate Salary,Salary,Income,3440.05,Bank Transfer
+TXN-10487,2026-06-05,Target Department Store,Shopping,Expense,17.03,Cash
+TXN-10488,2026-05-03,Nike Store,Shopping,Expense,54.36,Debit Card
+TXN-10489,2026-10-08,Steam Video Game Store,Entertainment,Expense,121.52,Credit Card
+TXN-10490,2026-05-26,Bi-weekly Salary,Salary,Income,4690.03,Bank Transfer
+TXN-10491,2026-08-18,Target Department Store,Shopping,Expense,44.56,Credit Card
+TXN-10492,2026-07-03,CVS Pharmacy,Healthcare,Expense,302.85,Bank Transfer
+TXN-10493,2026-06-22,Mobile Phone Plan,Bills,Expense,131.62,Credit Card
+TXN-10494,2026-07-01,Shell Gas Station,Transport,Expense,73.94,Cash
+TXN-10495,2026-05-19,Whole Foods Market,Food,Expense,131.28,Debit Card
+TXN-10496,2026-08-08,Spotify Premium,Entertainment,Expense,80.12,Debit Card
+TXN-10497,2026-08-29,Uber Ride,Transport,Expense,85.53,Credit Card
+TXN-10498,2026-07-07,Starbucks Coffee,Food,Expense,74.87,Cash
+TXN-10499,2026-08-15,Netflix Subscription,Entertainment,Expense,92.55,Cash
+TXN-10500,2026-10-05,Direct Deposit Payroll,Salary,Income,2737.06,Debit Card
+TXN-10501,2026-06-09,Netflix Subscription,Entertainment,Expense,48.94,UPI
+TXN-10502,2026-07-01,Direct Deposit Payroll,Salary,Income,2847.96,Cash
+TXN-10503,2026-10-03,High-Yield Savings Interest,Investment,Income,313.22,Debit Card
+TXN-10504,2026-05-31,Bi-weekly Salary,Salary,Income,2534.05,UPI
+TXN-10505,2026-07-28,Dental Checkup Co-pay,Healthcare,Expense,155.28,Bank Transfer
+TXN-10506,2026-05-31,Whole Foods Market,Food,Expense,114.54,Bank Transfer
+TXN-10507,2026-09-12,High-Yield Savings Interest,Investment,Income,301.01,UPI
+TXN-10508,2026-08-25,Starbucks Coffee,Food,Expense,121.44,Debit Card
+TXN-10509,2026-08-03,Bi-weekly Salary,Salary,Income,4522.36,Credit Card
+TXN-10510,2026-06-28,Trader Joe's Groceries,Food,Expense,121.35,Credit Card
+TXN-10511,2026-07-02,Consulting Retainer,Freelance,Income,1680.34,Debit Card
+TXN-10512,2026-05-10,Cinema Ticket IMAX,Entertainment,Expense,50.48,UPI
+TXN-10513,2026-07-21,Lyft Ride,Transport,Expense,57.21,Cash
+TXN-10514,2026-10-20,Target Department Store,Shopping,Expense,114.17,Credit Card
+TXN-10515,2026-08-11,Consulting Retainer,Freelance,Income,1460.29,Bank Transfer
+TXN-10516,2026-07-23,Upwork Web Dev Client,Freelance,Income,853.38,Bank Transfer
+TXN-10517,2026-09-22,Mobile Phone Plan,Bills,Expense,154.16,UPI
+TXN-10518,2026-06-20,Home Internet Fiber,Bills,Expense,41.98,UPI
+TXN-10519,2026-05-07,Coursera Annual Subscription,Education,Expense,334.81,Credit Card
+TXN-10520,2026-10-16,CVS Pharmacy,Healthcare,Expense,103.61,Debit Card
+TXN-10001,2026-10-11,Stock Capital Gain,Investment,Income,147.96,Debit Card
+TXN-10021,2026-08-25,High-Yield Savings Interest,Investment,Income,155.36,Cash
+TXN-10041,2026-07-13,Monthly Apartment Rent,Housing,Expense,951.92,Debit Card
+TXN-10061,2026-08-14,Stock Capital Gain,Investment,Income,362.95,UPI
+TXN-10081,2026-08-27,Monthly Corporate Salary,Salary,Income,3869.39,UPI
+TXN-ERR-001,2026-99-99,Corrupted Data Record,Food,Expense,45.0,Credit Card
+TXN-ERR-002,2026-03-01,Negative Amount Error,Shopping,Expense,-75.0,Debit Card
+TXN-ERR-003,2026-03-02,Zero Amount Error,Bills,Expense,0.0,UPI
+,2026-03-03,Missing ID Transaction,Food,Expense,25.0,Cash
+TXN-ERR-005,2026-03-04,Invalid Type Transaction,Entertainment,InvalidType,60.0,Credit Card

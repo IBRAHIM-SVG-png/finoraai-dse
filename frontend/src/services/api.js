@@ -1,4 +1,4 @@
-// API Client Service for Harsha Personal Finance System
+// API Client Service for DSCS Personal Finance System
 
 const BASE_URL = import.meta.env.VITE_API_URL || '/api';
 const DIRECT_API_URL = 'http://127.0.0.1:5000/api';
@@ -25,10 +25,11 @@ async function safeFetch(url, options) {
     networkError = err;
   }
 
-  // If primary request failed or returned a 404 HTML (Vite proxy missing/misrouted), try direct connection to Flask
+  // If primary request failed (network error), returned 502/503/504 (proxy failed to reach backend), or returned a 404 HTML (Vite proxy missing/misrouted), try direct connection to Flask
+  const isGatewayError = res && (res.status === 502 || res.status === 503 || res.status === 504);
   const isHtml404 = res && res.status === 404 && (res.headers.get('content-type') || '').includes('text/html');
 
-  if (networkError || isHtml404) {
+  if (networkError || isGatewayError || isHtml404) {
     if (url.startsWith('/api')) {
       try {
         const directUrl = url.replace(/^\/api/, DIRECT_API_URL);
@@ -40,8 +41,12 @@ async function safeFetch(url, options) {
     }
   }
 
-  if (networkError) {
-    throw new Error('Unable to connect to the backend server. Please verify that the Flask backend is running on http://127.0.0.1:5000 (cd backend; python app.py).');
+  if (networkError || isGatewayError) {
+    // If res was a JSON error from Vite proxy configure, let handleResponse parse it
+    const contentType = res ? res.headers.get('content-type') || '' : '';
+    if (!contentType.includes('application/json')) {
+      throw new Error('Unable to connect to the backend server. Please verify that the Flask backend is running on http://127.0.0.1:5000 (run "python app.py" in backend folder or "npm run dev" from root).');
+    }
   }
 
   return res;
@@ -68,6 +73,9 @@ async function handleResponse(response) {
   if (!response.ok) {
     if (response.status === 404) {
       throw new Error('API route not found (404). Please ensure the backend server is running and accessible.');
+    }
+    if (response.status === 502 || response.status === 503 || response.status === 504) {
+      throw new Error('Backend server is offline or unreachable (502 Bad Gateway). Please start the Flask API server using "python backend/app.py" or "npm run dev".');
     }
     throw new Error(`Server request failed (Status: ${response.status})`);
   }

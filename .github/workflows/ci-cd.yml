@@ -1,0 +1,107 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  # =======================================================
+  # CONTINUOUS INTEGRATION (CI)
+  # =======================================================
+  ci-pipeline:
+    name: Continuous Integration & Verification
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install flake8
+
+      - name: Check Python Syntax & Compile Code
+        run: |
+          # Fails if there are syntax errors or undefined symbols
+          flake8 backend database etl tests --count --select=E9,F63,F7,F82 --show-source --statistics
+          python -m compileall backend database etl tests
+
+      - name: Run Automated Pytest Suite
+        run: |
+          # Executes calculation unit tests, ETL component tests, idempotency, and fallback tests
+          python -m pytest -v --tb=short
+
+      - name: Verify ETL Pipeline Execution
+        run: |
+          # Runs end-to-end pipeline against CSV fallback mode (with no live DB required in CI)
+          python -m etl.pipeline
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Application Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: false
+          tags: personal-finance-analytics:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  # =======================================================
+  # CONTINUOUS DELIVERY (CD) - Container Image Publishing
+  # =======================================================
+  cd-delivery:
+    name: Continuous Delivery (GHCR Container Publishing)
+    needs: ci-pipeline
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry (GHCR)
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract Docker Metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository }}
+          tags: |
+            type=raw,value=latest
+            type=sha,format=short
+
+      - name: Build and Publish Docker Image to GHCR
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

@@ -1,0 +1,11 @@
+{
+  "execution_time": "2026-10-29T01:00:35.811776",
+  "status": "SUCCESS",
+  "database_connected": true,
+  "records_extracted": 2,
+  "records_transformed": 1,
+  "records_rejected": 1,
+  "records_loaded": 1,
+  "data_source": "SQLite Database",
+  "details": "Idempotent upsert completed successfully for 1 records."
+}

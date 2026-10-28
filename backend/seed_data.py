@@ -16,6 +16,7 @@ def seed_demo_data():
         if existing:
             user_id = existing['id']
             print(f"Demo user already exists (id={user_id}). Re-seeding fresh data...")
+            cursor.execute("UPDATE users SET full_name = 'DSCS' WHERE id = ?", (user_id,))
             cursor.execute("DELETE FROM transactions WHERE user_id = ?", (user_id,))
             cursor.execute("DELETE FROM budgets WHERE user_id = ?", (user_id,))
             cursor.execute("DELETE FROM financial_goals WHERE user_id = ?", (user_id,))
@@ -25,7 +26,7 @@ def seed_demo_data():
             cursor.execute("""
                 INSERT INTO users (username, email, password_hash, full_name, currency, monthly_savings_target)
                 VALUES (?, ?, ?, ?, ?, ?)
-            """, ("demo_user", "demo@example.com", pwd_hash, "Harsha Vardhan", "INR", 15000.0))
+            """, ("demo_user", "demo@example.com", pwd_hash, "DSCS", "INR", 15000.0))
             user_id = cursor.lastrowid
             print(f"Created demo user with id={user_id}")
 

@@ -144,14 +144,137 @@ Pre-seeded with realistic financial records (salary, freelance, rent, groceries,
 
 ---
 
-## 7. Running Automated Test Suite
-To verify calculation formulas, compound interest models, budget utilization thresholds, and Monte Carlo probabilities:
+## 7. Automated Test Suite (Pytest & Unittest)
+
+Run the unified automated test suite verifying financial mathematics, calculation engines, and all ETL pipeline stages:
 ```powershell
-cd backend
-python -m unittest tests/test_calculations.py
+python -m pytest -v
 ```
 *Expected Result:*
 ```
-Ran 5 tests in 1.100s
-OK
+============================= 23 passed in 3.13s ==============================
 ```
+
+---
+
+## 8. Automated ETL (Extract, Transform, Load) Pipeline
+
+### ETL Architecture Flow
+```
+Raw Dataset (data/transactions.csv)
+       |
+       v
+    Extract (etl/extract.py) --> Preserves source, reads CSV/Excel, records row count
+       |
+       v
+   Transform (etl/transform.py) --> Deduplication, date/amount validation, type standardization
+       |
+       v
+   Validate & Quarantine --> Invalid records separated into data/processed/rejected_transactions.csv
+       |
+       v
+     Load (etl/load.py) --> Connects to PostgreSQL with idempotent upsert (ON CONFLICT DO UPDATE)
+       |
+       +------------------------------------+
+       |                                    |
+       v                                    v
+PostgreSQL Database              CSV Fallback Safe Mode
+(if DB available)             (data/processed/cleaned_transactions.csv)
+```
+
+### ETL Execution Command
+From the project root directory, run:
+```powershell
+python -m etl.pipeline
+```
+
+The pipeline outputs verified runtime metrics:
+- **Extracted Records**: Total raw records parsed from the source file.
+- **Transformed Records**: Validated, cleaned, and standardized records saved to `data/processed/cleaned_transactions.csv`.
+- **Rejected Records**: Quarantined invalid records with failure reasons saved to `data/processed/rejected_transactions.csv`.
+- **Successfully Loaded Records**: Number of records committed to database.
+- **Database Connection Status**: Actual live status (never falsifies connection).
+- **Execution Timestamp**: System time of execution.
+- **Calculated Summaries**: Aggregated total income, expenses, net savings, and savings rate.
+
+---
+
+## 9. CI/CD Architecture (GitHub Actions)
+
+### CI/CD Workflow Flow
+```
+Git Push to main / Pull Request
+       |
+       v
+GitHub Actions CI/CD Runner (.github/workflows/ci-cd.yml)
+       |
+       +---> [1] Environment Setup: Python 3.11 + pip dependency installation
+       |
+       +---> [2] Syntax Verification: Static code linting via flake8 & compileall
+       |
+       +---> [3] Automated Tests: pytest execution covering calculations and ETL
+       |
+       +---> [4] ETL Pipeline Validation: End-to-end execution in fallback mode
+       |
+       +---> [5] Docker Container Build: Application image built with Docker Buildx
+       |
+       v (On successful check and merge to main)
+Continuous Delivery (CD)
+       |
+       +---> [6] Secure Publish: Image published to GitHub Container Registry (ghcr.io)
+```
+
+### GitHub Actions Workflow Specification
+- **Trigger**: Automatic on `push` and `pull_request` targeting `main`.
+- **Location**: `.github/workflows/ci-cd.yml`
+- **Security**: Zero hardcoded credentials, uses temporary scoped `GITHUB_TOKEN` (`contents: read`, `packages: write`).
+- **Safety Gate**: Workflow terminates with failure if any pytest test or Docker compilation fails.
+
+---
+
+## 10. Docker & PostgreSQL Database Configuration
+
+### Services in `docker-compose.yml`:
+1. **`db`**: PostgreSQL 15-alpine database container
+   - Port: `5432:5432`
+   - Data Volume: `postgres_data` persistent volume
+   - Healthcheck: `pg_isready -U postgres -d finance_db`
+   - Schema auto-initialization via `database/schema.sql`
+2. **`web`**: Python application container
+   - Port: `5000:5000`
+   - Healthcheck: `curl --fail http://localhost:5000/api/health`
+   - Relies on `condition: service_healthy` from database service
+
+### Launching Docker Environment:
+```powershell
+# Start PostgreSQL database in background
+docker compose up -d db
+
+# Run ETL pipeline against live container
+python -m etl.pipeline
+
+# Launch entire containerized system
+docker compose up --build
+```
+*Note: Docker is optional. The existing application and dashboard run locally with SQLite and CSV fallback without requiring Docker.*
+
+---
+
+## 11. Git Workflow & Submission
+
+To push changes to GitHub and trigger the CI/CD workflow:
+```powershell
+git add .
+git commit -m "feat(ia3): implement automated ETL pipeline, Pytest suite, and CI/CD workflow"
+git push origin main
+```
+Navigate to the **Actions** tab in your GitHub repository to inspect live pipeline execution and status badges.
+
+---
+
+## 12. Troubleshooting Guide
+
+- **PostgreSQL Connection Error**: If Docker/PostgreSQL is not running, the ETL pipeline automatically logs the failure, updates `data/processed/etl_metadata.json`, and saves the cleaned dataset to CSV fallback without crashing.
+- **Running Pytest**: Always run `python -m pytest -v` from the project root directory.
+- **Windows Console Characters**: All console output uses cross-platform ASCII-safe currency format (`INR`) to avoid Windows code page `cp1252` encoding errors.
+- **Frontend Dashboard Integrity**: The dashboard frontend (`frontend/src/`) remains 100% intact according to capstone design specifications.

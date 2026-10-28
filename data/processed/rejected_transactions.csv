@@ -1,0 +1,11 @@
+transaction_id,date,description,category,transaction_type,amount,payment_method,rejection_reason
+TXN-10001,2026-10-11,Stock Capital Gain,Investment,Income,147.96,Debit Card,Duplicate transaction_id
+TXN-10021,2026-08-25,High-Yield Savings Interest,Investment,Income,155.36,Cash,Duplicate transaction_id
+TXN-10041,2026-07-13,Monthly Apartment Rent,Housing,Expense,951.92,Debit Card,Duplicate transaction_id
+TXN-10061,2026-08-14,Stock Capital Gain,Investment,Income,362.95,UPI,Duplicate transaction_id
+TXN-10081,2026-08-27,Monthly Corporate Salary,Salary,Income,3869.39,UPI,Duplicate transaction_id
+TXN-ERR-001,2026-99-99,Corrupted Data Record,Food,Expense,45.0,Credit Card,Invalid date format: 2026-99-99
+TXN-ERR-002,2026-03-01,Negative Amount Error,Shopping,Expense,-75.0,Debit Card,Amount must be positive numeric: -75.0
+TXN-ERR-003,2026-03-02,Zero Amount Error,Bills,Expense,0.0,UPI,Amount must be positive numeric: 0.0
+,2026-03-03,Missing ID Transaction,Food,Expense,25.0,Cash,Missing or empty transaction_id
+TXN-ERR-005,2026-03-04,Invalid Type Transaction,Entertainment,InvalidType,60.0,Credit Card,Invalid transaction_type: 'Invalidtype' (must be Income or Expense)

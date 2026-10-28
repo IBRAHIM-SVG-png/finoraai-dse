@@ -18,6 +18,7 @@ env/
 # Environment files
 .env
 *.log
+.pytest_cache/
 
 # OS & Editor
 .DS_Store
