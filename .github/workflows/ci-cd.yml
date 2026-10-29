@@ -24,7 +24,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest pandas numpy openpyxl sqlalchemy python-dotenv
+           pip install pytest pandas numpy openpyxl sqlalchemy python-dotenv psycopg2-binary
 
       - name: Run Tests
         run: python -m pytest -v
